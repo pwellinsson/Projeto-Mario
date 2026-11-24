@@ -4,31 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Mario Encanador</title>
   </head>
   <body>
+    <video
+      class="video-fundo"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+    <div class="mask-video"></div>
+
     <header>
-      <img src="img/logo-header.png" alt="Foto-Mario" height="80px" />
+      <img id="logo-header" src="img/logo-header.png" alt="Foto-Mario" />
       <a href="index.html">Home</a>
       <a href="page2.html">Fale Conosco</a>
       <a href="page3.html">Nossos serviços</a>
     </header>
     <main>
-      <img src="img/logo.png" alt="Logo do site Mario" height="200px" />
-      <p>
-        🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com
-        Estilo! 🔧
-      </p>
-      <p>
-        Você já se encontrou em uma situação de emergência com encanamento?
-        Vazamentos inesperados, canos entupidos ou torneiras que não param de
-        pingar? Não se preocupe, porque estamos aqui para salvar o dia!
-        Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos
-        - Mario e Luigi!
-      </p>
-      <img src="img/mario.png" alt="Foto de Mario" height="200px" />
+      <section class="item">
+        <img
+          id="logo-mario"
+          src="img/logo.png"
+          alt="Logo do site Mario"
+          height="200px"
+        />
 
-      <button>Entre em contato!</button>
+        <p>
+          🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos
+          Com Estilo! 🔧
+        </p>
+        <p>
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+        <button>Entre em contato!</button>
+      </section>
+
+      <aside class="item">
+        <img
+          id="mario-luigi-img"
+          src="img/mario.png"
+          alt="Foto de Mario"
+          height="200px"
+        />
+      </aside>
     </main>
+    <a
+      href="https://wa.me/5511987364239?text=Quero%20saber%20mais%20sobre"
+      class="link-whatsapp"
+    >
+      <img src="img/whatsapp.png" alt="Botão WhatsApp" />
+    </a>
+
+    <form action="#" method="post">
+      <input type="text" name="name" id="name" placeholder="Nome:" />
+      <input type="tel" name="phone" id="phone" placeholder="Telefone:" />
+
+      <textarea
+        name="description"
+        id="description"
+        placeholder="Seu problema aqui:"
+      ></textarea>
+
+      <button type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="mask-form"></div>
   </body>
 </html>
