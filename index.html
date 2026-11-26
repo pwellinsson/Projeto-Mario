@@ -29,8 +29,8 @@
     <header>
       <img id="logo-header" src="img/logo-header.png" alt="Foto-Mario" />
       <a href="index.html">Home</a>
-      <a href="page2.html">Fale Conosco</a>
-      <a href="page3.html">Nossos serviços</a>
+      <a href="#" onclick="showForm(event)">Fale Conosco</a>
+      <a href="servicos.html">Nossos Serviços</a>
     </header>
     <main>
       <section class="item">
@@ -52,7 +52,7 @@
           Apresentamos a vocês os encanadores mais famosos do Reino dos
           Cogumelos - Mario e Luigi!
         </p>
-        <button>Entre em contato!</button>
+        <button onclick="showForm()">Entre em contato!</button>
       </section>
 
       <aside class="item">
@@ -71,7 +71,12 @@
       <img src="img/whatsapp.png" alt="Botão WhatsApp" />
     </a>
 
-    <form action="#" method="post">
+    <form
+      class="form"
+      action="https://formcarry.com/s/jO4JaY0yngQ"
+      method="POST"
+      enctype="multipart/form-data"
+    >
       <input type="text" name="name" id="name" placeholder="Nome:" />
       <input type="tel" name="phone" id="phone" placeholder="Telefone:" />
 
@@ -83,6 +88,8 @@
 
       <button type="submit">Pedir Orçamento</button>
     </form>
-    <div class="mask-form"></div>
+    <div class="mask-form" onclick="hiddenForm()"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
